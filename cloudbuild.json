@@ -6,6 +6,14 @@
             "args": [
                 "install"
             ]
+        },
+        {
+            "name": "node",
+            "entrypoint": "npm",
+            "args": [
+                "run",
+                "build"
+            ]
         }
     ]
 }
