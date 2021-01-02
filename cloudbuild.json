@@ -19,7 +19,7 @@
             "waitFor": ["dependicies"]
         },
         {
-            "name": "gcloud",
+            "name": "gcr.io/cloud-builders/gcloud",
             "entrypoint": "app",
             "id": "deploy",
             "args": [
