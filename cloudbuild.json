@@ -17,6 +17,16 @@
                 "build"
             ],
             "waitFor": ["dependicies"]
+        },
+        {
+            "name": "node",
+            "entrypoint": "npm",
+            "id": "run",
+            "args": [
+                "run",
+                "start:prod"
+            ],
+            "waitFor": ["build"]
         }
     ]
 }
