@@ -20,9 +20,9 @@
         },
         {
             "name": "gcr.io/cloud-builders/gcloud",
-            "entrypoint": "app",
             "id": "deploy",
             "args": [
+                "app",
                 "deploy"
             ],
             "waitFor": ["build"]
