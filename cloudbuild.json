@@ -19,12 +19,11 @@
             "waitFor": ["dependicies"]
         },
         {
-            "name": "node",
-            "entrypoint": "npm",
-            "id": "run",
+            "name": "gcloud",
+            "entrypoint": "app",
+            "id": "deploy",
             "args": [
-                "run",
-                "start:prod"
+                "deploy"
             ],
             "waitFor": ["build"]
         }
