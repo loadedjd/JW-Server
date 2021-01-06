@@ -1,7 +1,7 @@
 runtime: nodejs14
-network:
-  forwarded_ports:
-    - 80
-    - 80:80
-    - 80/tcp
-    - 80:80/udp
+# network:
+#   forwarded_ports:
+#     - 80
+#     - 80:80
+#     - 80/tcp
+#     - 80:80/udp
