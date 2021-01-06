@@ -8,7 +8,7 @@ import { ApiModule } from './api/api.module';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join('..', 'web', 'build'),
+      rootPath: join(__dirname, '..', 'web', 'build'),
     }),
     ApiModule
   ],
