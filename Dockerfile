@@ -1,5 +1,9 @@
 FROM node:14
-COPY . .
+COPY . /app
+
+WORKDIR /app
+
+EXPOSE 8080
 
 RUN npm i
 RUN npm run build
