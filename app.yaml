@@ -1,4 +1,5 @@
-runtime: nodejs14
+runtime: custom
+env: flex
 # network:
 #   forwarded_ports:
 #     - 80

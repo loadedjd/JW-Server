@@ -1,31 +1,12 @@
 {
     "steps": [
         {
-            "name": "node",
-            "id": "dependicies",
-            "entrypoint": "npm",
-            "args": [
-                "install"
-            ]
-        },
-        {
-            "name": "node",
-            "entrypoint": "npm",
-            "id": "build",
-            "args": [
-                "run",
-                "build"
-            ],
-            "waitFor": ["dependicies"]
-        },
-        {
             "name": "gcr.io/cloud-builders/gcloud",
             "id": "deploy",
             "args": [
                 "app",
                 "deploy"
-            ],
-            "waitFor": ["build"]
+            ]
         }
     ]
 }
